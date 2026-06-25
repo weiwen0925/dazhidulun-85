@@ -231,6 +231,41 @@ body{font-size:20px!important;}
 .sb-circle{font-size:15px!important;}
 .sb-label{font-size:11.5px!important;}
 .site-footer,.site-footer p{font-size:15px!important;}
+
+/* wy-cross-nav-css v1 */
+/* ── 跨卷導覽（側欄底部）── */
+.sb-cross{display:flex;flex-direction:column;align-items:center;gap:8px;
+  width:100%;margin:18px 0 4px;padding:18px 4px 6px;position:relative;}
+.sb-cross::before{content:"";position:absolute;top:0;left:14%;right:14%;
+  height:1px;background:linear-gradient(90deg,
+    transparent 0%,rgba(184,134,11,.15) 18%,
+    var(--gold,#b8860b) 50%,
+    rgba(184,134,11,.15) 82%,transparent 100%);
+  box-shadow:0 1px 0 rgba(212,168,75,.18);}
+.sb-cross::after{content:"";position:absolute;top:6px;left:38%;right:38%;
+  height:1px;background:linear-gradient(90deg,
+    transparent,rgba(184,134,11,.55),transparent);}
+.sb-x{display:flex;flex-direction:column;align-items:center;gap:3px;
+  text-decoration:none;color:var(--sbText,#d4c4a8);padding:4px 4px;width:100%;
+  border-radius:7px;transition:all .25s;}
+.sb-x:hover{background:rgba(184,134,11,.14);transform:translateY(-1px);}
+.sb-x-glyph{width:30px;height:30px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:1.2px solid rgba(212,196,168,.55);
+  color:var(--goldL,#d4a84b);font-family:"Noto Sans TC",sans-serif;font-size:14px;
+  background:rgba(184,134,11,.08);transition:all .25s;}
+.sb-x:hover .sb-x-glyph{border-color:var(--gold,#b8860b);color:#fff;
+  background:linear-gradient(135deg,var(--gold,#b8860b),var(--goldL,#d4a84b));
+  box-shadow:0 0 10px rgba(184,134,11,.5);}
+.sb-x-label{font-family:"Noto Sans TC",sans-serif;font-size:10.5px;
+  letter-spacing:1.2px;color:var(--sbText,#d4c4a8);opacity:.78;text-align:center;
+  line-height:1.25;}
+.sb-x:hover .sb-x-label{color:var(--goldL,#d4a84b);opacity:1;}
+.sb-x-hub .sb-x-glyph{background:linear-gradient(135deg,
+  rgba(184,134,11,.22),rgba(212,168,75,.18));
+  border-color:rgba(212,168,75,.55);color:var(--goldL,#d4a84b);font-size:13px;
+  font-weight:700;letter-spacing:1px;}
+
 </style>
 <meta content="《大智度論》卷八十五彙整──釋道樹品第七十一、釋菩薩行品第七十二、釋種善根品第七十三。龍樹菩薩造、鳩摩羅什譯。逐章解析二諦圓融、菩薩行體用、方便力、住六波羅蜜與種善根，含總目錄與卷品章節深連結，中觀正觀的完整閱讀本。" name="description"/>
 <meta content="大智度論,卷八十五,釋道樹品,釋菩薩行品,釋種善根品,道樹品第七十一,菩薩行品第七十二,種善根品第七十三,龍樹菩薩,鳩摩羅什,般若波羅蜜,摩訶般若波羅蜜經,中觀,二諦,方便力,種善根,菩薩行,薩婆若,佛學,經論,智度論" name="keywords"/>
@@ -371,6 +406,21 @@ body{font-size:20px!important;}
 <a class="sb-item" data-target="chapter-2" href="#chapter-2"><span class="sb-circle">二</span><span class="sb-label" data-wytext="n/aEjPfTgMjokP/0"></span></a>
 <a class="sb-item" data-target="chapter-3" href="#chapter-3"><span class="sb-circle">三</span><span class="sb-label" data-wytext="kNGDgff+jsndkP/0"></span></a>
 </nav>
+  <!-- wy-cross-nav v1 -->
+  <div class="sb-cross">
+    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-84/" title="第八十四卷">
+      <span class="sb-x-glyph">←</span>
+      <span class="sb-x-label">卷八十四</span>
+    </a>
+    <a class="sb-x sb-x-hub" href="https://weiwen0925.github.io/dazhidulun-0/" title="大智度論門頁">
+      <span class="sb-x-glyph">智</span>
+      <span class="sb-x-label">門頁</span>
+    </a>
+    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-86/" title="第八十六卷">
+      <span class="sb-x-glyph">→</span>
+      <span class="sb-x-label">卷八十六</span>
+    </a>
+  </div>
 </aside>
 <div class="read-progress" id="readProgress">
 <span class="rp-label" data-wytext="nu+cjM/6genWkNbT"></span>
