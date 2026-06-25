@@ -231,41 +231,6 @@ body{font-size:20px!important;}
 .sb-circle{font-size:15px!important;}
 .sb-label{font-size:11.5px!important;}
 .site-footer,.site-footer p{font-size:15px!important;}
-
-/* wy-cross-nav-css v1 */
-/* ── 跨卷導覽（側欄底部）── */
-.sb-cross{display:flex;flex-direction:column;align-items:center;gap:8px;
-  width:100%;margin:18px 0 4px;padding:18px 4px 6px;position:relative;}
-.sb-cross::before{content:"";position:absolute;top:0;left:14%;right:14%;
-  height:1px;background:linear-gradient(90deg,
-    transparent 0%,rgba(184,134,11,.15) 18%,
-    var(--gold,#b8860b) 50%,
-    rgba(184,134,11,.15) 82%,transparent 100%);
-  box-shadow:0 1px 0 rgba(212,168,75,.18);}
-.sb-cross::after{content:"";position:absolute;top:6px;left:38%;right:38%;
-  height:1px;background:linear-gradient(90deg,
-    transparent,rgba(184,134,11,.55),transparent);}
-.sb-x{display:flex;flex-direction:column;align-items:center;gap:3px;
-  text-decoration:none;color:var(--sbText,#d4c4a8);padding:4px 4px;width:100%;
-  border-radius:7px;transition:all .25s;}
-.sb-x:hover{background:rgba(184,134,11,.14);transform:translateY(-1px);}
-.sb-x-glyph{width:30px;height:30px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  border:1.2px solid rgba(212,196,168,.55);
-  color:var(--goldL,#d4a84b);font-family:"Noto Sans TC",sans-serif;font-size:14px;
-  background:rgba(184,134,11,.08);transition:all .25s;}
-.sb-x:hover .sb-x-glyph{border-color:var(--gold,#b8860b);color:#fff;
-  background:linear-gradient(135deg,var(--gold,#b8860b),var(--goldL,#d4a84b));
-  box-shadow:0 0 10px rgba(184,134,11,.5);}
-.sb-x-label{font-family:"Noto Sans TC",sans-serif;font-size:10.5px;
-  letter-spacing:1.2px;color:var(--sbText,#d4c4a8);opacity:.78;text-align:center;
-  line-height:1.25;}
-.sb-x:hover .sb-x-label{color:var(--goldL,#d4a84b);opacity:1;}
-.sb-x-hub .sb-x-glyph{background:linear-gradient(135deg,
-  rgba(184,134,11,.22),rgba(212,168,75,.18));
-  border-color:rgba(212,168,75,.55);color:var(--goldL,#d4a84b);font-size:13px;
-  font-weight:700;letter-spacing:1px;}
-
 </style>
 <meta content="《大智度論》卷八十五彙整──釋道樹品第七十一、釋菩薩行品第七十二、釋種善根品第七十三。龍樹菩薩造、鳩摩羅什譯。逐章解析二諦圓融、菩薩行體用、方便力、住六波羅蜜與種善根，含總目錄與卷品章節深連結，中觀正觀的完整閱讀本。" name="description"/>
 <meta content="大智度論,卷八十五,釋道樹品,釋菩薩行品,釋種善根品,道樹品第七十一,菩薩行品第七十二,種善根品第七十三,龍樹菩薩,鳩摩羅什,般若波羅蜜,摩訶般若波羅蜜經,中觀,二諦,方便力,種善根,菩薩行,薩婆若,佛學,經論,智度論" name="keywords"/>
@@ -280,6 +245,30 @@ body{font-size:20px!important;}
 <meta content="summary" name="twitter:card"/>
 <meta content="大智度論 · 卷八十五 · 三品彙整" name="twitter:title"/>
 <meta content="釋道樹品 · 釋菩薩行品 · 釋種善根品，逐章解析與每節深連結。" name="twitter:description"/>
+<style id="wy-video-style">
+.toc-card{position:relative;padding:20px 24px 30px!important;}
+.toc-card-main{display:flex;align-items:center;gap:18px;flex:1;text-decoration:none;color:inherit;}
+.toc-video{position:absolute;right:14px;bottom:12px;display:inline-flex;align-items:center;gap:5px;
+  font-family:'Noto Sans TC',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:1px;
+  color:#5c3d0c;background:linear-gradient(135deg,#e9c97c,#d6aa4e);
+  border:1px solid #b8860b;border-radius:20px;padding:4px 13px;text-decoration:none;
+  box-shadow:0 1px 4px rgba(184,134,11,.25);transition:background .2s,box-shadow .2s,transform .2s,color .2s;z-index:3;}
+.toc-video:hover{background:linear-gradient(135deg,#d6aa4e,#b8860b);color:#33220a;
+  box-shadow:0 3px 11px rgba(184,134,11,.42);transform:translateY(-1px);}
+.toc-video .wy-vi{font-size:11px;line-height:1;}
+.wy-vbtn{position:fixed;right:24px;bottom:84px;z-index:121;display:none;
+  align-items:center;gap:8px;text-decoration:none;
+  font-family:'Noto Sans TC',sans-serif;font-size:14px;font-weight:500;letter-spacing:1px;
+  color:#33220a;background:linear-gradient(135deg,#ecca7c,#cda64a);
+  border:1px solid #b8860b;border-radius:24px;padding:10px 18px;
+  box-shadow:0 4px 16px rgba(120,80,20,.32);transition:background .22s,box-shadow .22s,transform .22s,color .22s;}
+.wy-vbtn.show{display:inline-flex;}
+.wy-vbtn:hover{background:linear-gradient(135deg,#d6aa4e,#b8860b);color:#241704;
+  box-shadow:0 6px 22px rgba(120,80,20,.46);transform:translateY(-2px);}
+.wy-vbtn .wy-vbtn-ico{font-size:13px;line-height:1;}
+@media(max-width:900px){.wy-vbtn{right:14px;bottom:74px;font-size:13px;padding:8px 14px;}}
+@media print{.wy-vbtn,.toc-video{display:none!important;}}
+</style>
 <meta name="wy-full-protection" content="v2-silent">
 <meta name="robots" content="index,follow,max-image-preview:large,noai,noimageai">
 <meta name="googlebot" content="noai,noimageai">
@@ -382,21 +371,6 @@ body{font-size:20px!important;}
 <a class="sb-item" data-target="chapter-2" href="#chapter-2"><span class="sb-circle">二</span><span class="sb-label" data-wytext="n/aEjPfTgMjokP/0"></span></a>
 <a class="sb-item" data-target="chapter-3" href="#chapter-3"><span class="sb-circle">三</span><span class="sb-label" data-wytext="kNGDgff+jsndkP/0"></span></a>
 </nav>
-  <!-- wy-cross-nav v1 -->
-  <div class="sb-cross">
-    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-84/" title="第八十四卷">
-      <span class="sb-x-glyph">←</span>
-      <span class="sb-x-label">卷八十四</span>
-    </a>
-    <a class="sb-x sb-x-hub" href="https://weiwen0925.github.io/dazhidulun-0/" title="大智度論門頁">
-      <span class="sb-x-glyph">智</span>
-      <span class="sb-x-label">門頁</span>
-    </a>
-    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-86/" title="第八十六卷">
-      <span class="sb-x-glyph">→</span>
-      <span class="sb-x-label">卷八十六</span>
-    </a>
-  </div>
 </aside>
 <div class="read-progress" id="readProgress">
 <span class="rp-label" data-wytext="nu+cjM/6genWkNbT"></span>
@@ -424,9 +398,9 @@ body{font-size:20px!important;}
 <h2 class="toc-title" data-wytext="kMGQRIbhxkmN+eg="></h2>
 <div class="toc-desc" data-wytext="kvSageTRjeTlkdbhTu+PFcjzmZPBpIHy+0ir01WJ8N/JgrnI+7CS/ICDyto="></div>
 <div class="toc-grid">
-<a class="toc-card" href="#chapter-1"><div class="toc-num" data-wytext="k8Gt"></div><div class="toc-info"><span class="toc-name" data-wytext="kNWBgNn6jfrlVa7CTsS/vsT3opHRlIHy+4/FyJHU9ougudGV9g=="></span><span class="toc-sub" data-wytext="n/aEgu7qgej3k8TMhqW/0rHp1NH7yMvHnfPRRLfbVYqXtN2G0NTr6sX67J3y7YDNwZ3JrdCSjpCW/JaR7IT/wIzh3ovezsKEvA=="></span></div></a>
-<a class="toc-card" href="#chapter-2"><div class="toc-num" data-wytext="k8Oh"></div><div class="toc-info"><span class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsS/vsX5mJ/vhIzA9o365ZLA2YqVu9Cg99XN9Q=="></span><span class="toc-sub" data-wytext="k8S4g8zzjvHLnePchruR3Yz6EbXODY3K7o/9zJHV/oaTkN2l8dXP9Mne7ZzQ7ILCxJ3PodeJpZO035yoz4bRyIbY/A=="></span></div></a>
-<a class="toc-card" href="#chapter-3"><div class="toc-num" data-wytext="k8Gk"></div><div class="toc-info"><span class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsS/vsren5LvqYLBw4365ZLA2YqVu9Cg99XP8A=="></span><span class="toc-sub" data-wytext="k8e2jcXwgMLckdHuTu+PFcren5LvqYLBw0ir01WK49fJhorI/KpXm63wg/r8SYDI+ZHViN2Lup6n3pyE4onxzYbY/Ynwxsi1tMrdkZjFpA=="></span></div></a>
+<div class="toc-card"><a class="toc-card-main" href="#chapter-1"><div class="toc-num" data-wytext="k8Gt"></div><div class="toc-info"><span class="toc-name" data-wytext="kNWBgNn6jfrlVa7CTsS/vsT3opHRlIHy+4/FyJHU9ougudGV9g=="></span><span class="toc-sub" data-wytext="n/aEgu7qgej3k8TMhqW/0rHp1NH7yMvHnfPRRLfbVYqXtN2G0NTr6sX67J3y7YDNwZ3JrdCSjpCW/JaR7IT/wIzh3ovezsKEvA=="></span></div></a><a aria-label="本品影音" class="toc-video" data-wytext="SwpdBQ9aCwUFBh9ITFpBGFsfE0mbu9JdVRsZBRtSVYuQidyyxQ==" href="https://youtu.be/A2_zpmuQfac" rel="noopener" target="_blank"></a></div>
+<div class="toc-card"><a class="toc-card-main" href="#chapter-2"><div class="toc-num" data-wytext="k8Oh"></div><div class="toc-info"><span class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsS/vsX5mJ/vhIzA9o365ZLA2YqVu9Cg99XN9Q=="></span><span class="toc-sub" data-wytext="k8S4g8zzjvHLnePchruR3Yz6EbXODY3K7o/9zJHV/oaTkN2l8dXP9Mne7ZzQ7ILCxJ3PodeJpZO035yoz4bRyIbY/A=="></span></div></a><a aria-label="本品影音" class="toc-video" data-wytext="SwpdBQ9aCwUFBh9ITFpBGFsfE0mbu9JdVRsZBRtSVYuQidyyxQ==" href="https://youtu.be/WIYuzwXttjU" rel="noopener" target="_blank"></a></div>
+<div class="toc-card"><a class="toc-card-main" href="#chapter-3"><div class="toc-num" data-wytext="k8Gk"></div><div class="toc-info"><span class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsS/vsren5LvqYLBw4365ZLA2YqVu9Cg99XP8A=="></span><span class="toc-sub" data-wytext="k8e2jcXwgMLckdHuTu+PFcren5LvqYLBw0ir01WK49fJhorI/KpXm63wg/r8SYDI+ZHViN2Lup6n3pyE4onxzYbY/Ynwxsi1tMrdkZjFpA=="></span></div></a><a aria-label="本品影音" class="toc-video" data-wytext="SwpdBQ9aCwUFBh9ITFpBGFsfE0mbu9JdVRsZBRtSVYuQidyyxQ==" href="https://youtu.be/qNTNktcuqng" rel="noopener" target="_blank"></a></div>
 </div>
 </section>
 <section class="chapter" id="chapter-1">
@@ -610,6 +584,40 @@ var _rt=0,_riv=setInterval(function(){_rt++;resizeAllFrames();if(_rt>50)clearInt
   }
   if(document.readyState==='complete'||document.readyState==='interactive'){ init(); }
   else { document.addEventListener('DOMContentLoaded', init); }
+})();
+</script>
+<a aria-label="本品影音" class="wy-vbtn" href="https://youtu.be/A2_zpmuQfac" id="wy-vbtn" rel="noopener" target="_blank"><span class="wy-vbtn-ico">▶</span><span class="wy-vbtn-label" id="wy-vbtn-label"></span></a>
+<script id="wy-video-js">
+(function(){
+  var V={1:"https://youtu.be/A2_zpmuQfac",2:"https://youtu.be/WIYuzwXttjU",3:"https://youtu.be/qNTNktcuqng"};
+  var NM={1:"道樹品",2:"菩薩行品",3:"種善根品"};
+  var btn=document.getElementById("wy-vbtn");
+  var lab=document.getElementById("wy-vbtn-label");
+  if(!btn) return;
+  var cur=0;
+  function pick(){
+    var secs=document.querySelectorAll("section.chapter");
+    var act=0;
+    secs.forEach(function(s){
+      var m=/^chapter-(\d+)$/.exec(s.id||"");
+      if(!m) return;
+      if(s.getBoundingClientRect().top < window.innerHeight*0.45) act=parseInt(m[1],10);
+    });
+    return act;
+  }
+  function upd(){
+    var p=pick();
+    if(p>=1 && V[p]){
+      if(p!==cur){ cur=p; btn.setAttribute("href",V[p]); if(lab) lab.textContent="本品影音 · "+NM[p]; }
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  }
+  window.addEventListener("scroll",upd,{passive:true});
+  window.addEventListener("resize",upd);
+  upd();
+  [600,1500,3000,5000].forEach(function(ms){ setTimeout(upd,ms); });
 })();
 </script>
 
