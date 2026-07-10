@@ -1090,5 +1090,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C85P1:END-->
+<!--WY-C85P2:BEGIN-->
+<style id="wy-c85p2-css">
+.c85p2-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c85p2-fabbox.show{display:block;}
+.c85p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c85p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c85p2-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c85p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c85p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c85p2-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c85p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c85p2-modal.open{display:flex;}
+.c85p2-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c85p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c85p2-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c85p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c85p2-close:hover{background:#e3d5b8;}
+.c85p2-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c85p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c85p2-tbl th,.c85p2-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c85p2-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c85p2-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c85p2-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c85p2-tbl b{color:#8b2500;}
+.c85p2-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c85p2-note b{color:#8b2500;}
+@media(max-width:900px){.c85p2-fabbox{right:14px;}.c85p2-tbl{font-size:11.5px;}.c85p2-card{padding:26px 14px 16px;}}
+</style>
+<div class="c85p2-fabbox" id="c85p2Box"><button class="c85p2-btn" id="c85p2Btn" type="button" aria-label="開啟全景總表"><span class="c85p2-ic">▦</span><span class="c85p2-ls"><span class="c85p2-l1">本品 · 菩薩正行</span><span class="c85p2-l2">體用之辨・不二清淨行・貴果不貴因</span></span></button></div><div class="c85p2-modal" id="c85p2Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c85p2-card"><button class="c85p2-close" id="c85p2Close" type="button" aria-label="關閉">×</button><h3>卷八十五・第二品 釋菩薩行品第七十二 全景總表</h3><p class="sub">卷八十五・第二品｜何等是菩薩行・體用見行之辨・操作悖論與不二清淨行・佛義三維判準・菩提義如實知・畢竟空中增益悖論・貴果不貴因・供養善根善知識</p><table class="c85p2-tbl"><caption>一、體用之辨與正行判準（第一至三章）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>體用見行之辨</td><td>上一品（第七十一品）已詳釋般若波羅蜜為悉遍知諸法實相的智慧，理上包攝一切法。本章承此而起須菩提的探問：既然般若已攝一切法、又即是菩薩行，何以更問「何等是菩薩行」？答案在於體與用、見與行之別——般若是地圖，菩薩行是走過的履歷；本章先立此辨，再揭出「目足並運」的雙軌修證模型</td></tr><tr><td>正行判準・定義濾網</td><td>承上章「菩薩行為菩提諸善行」，本章先以一張「定義濾網」釐定何謂菩薩正行——廣義的身口意諸作須經剔除，留下的才是精義。其次揭示其動力引擎是悲智雙運，其修持本質是「行」空而非僅「觀」空：空性不是冥想的對象，而是貫穿萬行的穿透力</td></tr><tr><td>操作悖論與不二清淨行</td><td>菩薩既要遍行萬法，又要保持清淨，這便是操作上的悖論。本章揭示：清淨不在於「不行」，而在於不分別、不執取對立兩邊。凡夫執有、二乘執空，皆落戲論；唯菩薩滅戲論、行不二相，於萬行中得清淨，終以「離著心，行善法，名正行」收束</td></tr></tbody></table><table class="c85p2-tbl"><caption>二、佛義判準與菩提如實知（第四至六章）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>佛義三維判準・然燈喻</td><td>佛之所以為佛，在於「知諸法實義」。但聖者皆證實相，何獨佛名為佛？本章以三維度（廣度、深度、純度）定義佛義，再以金字塔與勘驗矩陣分判佛與二乘「質同而量異」——同證人法二無我，而真理的顆粒度、斷障的徹底度截然不同，並以「然燈喻」說明真理的相對性</td></tr><tr><td>菩提義與如實知</td><td>菩提者，空、如、法性、實際之義，亦名相言說、亦不可分別破壞、亦真實不誑。本章先列菩提的多重切面，再以四個同心層級界定「知」的深淺邊界——從「知實義」到「如實知一切法」，最後以二諦圓融詮釋佛智之所以圓滿，在於真俗雙照、無礙游走於空有之間</td></tr><tr><td>畢竟空中的增益悖論</td><td>「理」上畢竟空、無增減，「事」上卻要積累善根——這是全品最尖銳的悖論。本章解開此結的鑰匙是「不二法」：凡夫行二法故善根不增，菩薩行不二法故善根無限增益。再以夢覺喻說明「執善是夢，悟空是覺」，終歸於「以無所得，而為方便」這一中觀的修行總持</td></tr></tbody></table><table class="c85p2-tbl"><caption>三、動機校準與修行路徑（第七至八章）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>動機校準・貴果不貴因</td><td>「菩薩為善根故行般若不？」佛答：「不也！亦不為善根，亦不為非善根故行。」本章解此弔詭：菩薩貴的是阿耨多羅三藐三菩提之「果」，而非沿途的善根之「因」——貴果不貴因。善根如渡河之筏，是助佛道的工具（Means），非最終歸宿（Ends）；故「善法尚應捨，何況不善法」</td></tr><tr><td>修行路徑・供養善根善知識</td><td>全品的歸宿是落實的修證路徑：從供養聽法入手，經誦讀、心觀、了達而起無礙智；以「雙陀羅尼」貫通世俗與勝義二諦，具足「四無礙智」利益眾生。菩薩的不退轉，繫於內因（深心清淨）與外緣（諸佛善知識）雙重保險；解脫非自力獨生、非他力單予，乃因緣和合而生，終於「眾生淨故，世界清淨」——個人清淨昇華為法界莊嚴</td></tr></tbody></table><p class="c85p2-note">本品以「何等是菩薩行」一問揭幕，佛陀答以「為阿耨多羅三藐三菩提行」，由此展開體與用、見與行之辨——般若是地圖，菩薩行是履歷，唯有「目足並運」方成修證。定義濾網先剔除泛泛身口意業，留下悲智雙運、行空而非僅觀空的精義；操作悖論則以「不分別不執取」化解遍行與清淨的表面矛盾，終歸「離著心，行善法，名正行」。佛義三維判準（廣度・深度・純度）與然燈喻說明真理的相對性，指出聖者雖同證人法二無我，而佛智於顆粒度與斷障徹底度上迥異二乘；菩提義四層同心圈則揭示「如實知」由淺入深、終抵二諦圓融之境。全品最尖銳的悖論在於畢竟空中猶須積累善根，本品以「不二法」為鑰、以夢覺喻點破執善是夢悟空是覺，終以「貴果不貴因」與「善法尚應捨，何況不善法」定位善根之工具性格。末章落實供養、誦讀、心觀之修行路徑，以雙陀羅尼貫通二諦，終於「眾生淨故，世界清淨」——個人清淨昇華為法界莊嚴。</p></div></div>
+<script id="wy-c85p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c85p2Btn"),BOX=document.getElementById("c85p2Box"),MODAL=document.getElementById("c85p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVfab,.wy-vfab,#wyVideoFab,.wy-video-fab,#fabVideo,.fab-video,#wyVidFab,.wy-vid-fab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c85p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C85P2:END-->
 </body>
 </html>
